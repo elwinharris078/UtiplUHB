@@ -54,7 +54,6 @@ jobs:
       - name: Set up system wide dependencies
         run: |
           sudo apt-get install libsasl2-dev jq
-      - name: Cache LocalStack-ext dependencies (venv)
         uses: actions/cache@v2
         id: ext-cache
         with:
